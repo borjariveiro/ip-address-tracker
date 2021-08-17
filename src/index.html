@@ -30,5 +30,37 @@
 
     <title>IP Address Tracker | Frontend Mentor</title>
   </head>
-  <body></body>
+  <body>
+    <img class="background-image" src="images/pattern-bg.png" />
+    <h1 class="tittle">IP Address Tracker</h1>
+    <form class="search__form" action="#">
+      <input
+        class="search__input"
+        type="text"
+        placeholder="Search for any IP address or domain"
+      />
+      <button type="submit" search__button>
+        <img src="images/icon-arrow.svg" alt="Submit search ip or domain" />
+      </button>
+    </form>
+    <section class="address">
+      <div class="address__ip">
+        <h2>IP address</h2>
+        <p>192.212.174.101</p>
+      </div>
+      <div class="address__ip">
+        <h2>Location</h2>
+        <p>Brooklyn, NY 10001</p>
+      </div>
+      <div class="address__timezone">
+        <h2>Timezone</h2>
+        <p>UTC - 05:00</p>
+      </div>
+      <div class="address__ip">
+        <h2>ISP</h2>
+        <p>SpaceX Starlink</p>
+      </div>
+    </section>
+    <div class="map" id="map"></div>
+  </body>
 </html>
