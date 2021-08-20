@@ -23,44 +23,56 @@
     />
 
     <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- JS -->
-    <script src="js/index.js" defer></script>
 
     <title>IP Address Tracker | Frontend Mentor</title>
   </head>
   <body>
     <img class="background-image" src="images/pattern-bg.png" />
-    <h1 class="tittle">IP Address Tracker</h1>
-    <form class="search__form" action="#">
-      <input
-        class="search__input"
-        type="text"
-        placeholder="Search for any IP address or domain"
-      />
-      <button type="submit" search__button>
-        <img src="images/icon-arrow.svg" alt="Submit search ip or domain" />
-      </button>
-    </form>
-    <section class="address">
-      <div class="address__ip">
-        <h2>IP address</h2>
-        <p>192.212.174.101</p>
-      </div>
-      <div class="address__ip">
-        <h2>Location</h2>
-        <p>Brooklyn, NY 10001</p>
-      </div>
-      <div class="address__timezone">
-        <h2>Timezone</h2>
-        <p>UTC - 05:00</p>
-      </div>
-      <div class="address__ip">
-        <h2>ISP</h2>
-        <p>SpaceX Starlink</p>
-      </div>
-    </section>
-    <div class="map" id="map"></div>
+    <header class="header">
+      <h1 class="tittle">IP Address Tracker</h1>
+      <form class="search__form" action="#">
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button type="submit" class="search__button">
+          <img src="images/icon-arrow.svg" alt="Submit search ip or domain" />
+        </button>
+      </form>
+      <section class="address">
+        <div class="address__block">
+          <h2 class="address__tittle">IP address</h2>
+          <p class="address__info">192.212.174.101</p>
+        </div>
+        <div class="address__block">
+          <h2 class="address__tittle">Location</h2>
+          <p class="address__info">Brooklyn, NY 10001</p>
+        </div>
+        <div class="address__block">
+          <h2 class="address__tittle">Timezone</h2>
+          <p class="address__info">UTC - 05:00</p>
+        </div>
+        <div class="address__block">
+          <h2 class="address__tittle">ISP</h2>
+          <p class="address__info">SpaceX Starlink</p>
+        </div>
+      </section>
+    </header>
+    <div class="map" id="mapid"></div>
+    <!-- JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
