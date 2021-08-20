@@ -1,31 +1,58 @@
 .address {
-  background-color: white;
-  margin-top: 1.5rem;
-  width: 90%;
-  max-width: 700px;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 500;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 15px;
   padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  background-color: white;
+
+  @include tablet {
+    height: 170px;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    padding-top: 3rem;
+  }
 
   & .address__block {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @include tablet {
+      align-items: flex-start;
+      padding-right: 2%;
+      position: relative;
+      border-right: 1px solid $soft-gray;
+    }
+
     & .address__tittle {
       font-size: 0.7rem;
       color: $very-dark-gray;
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
+
+      @include tablet {
+        font-size: 1rem;
+        margin-top: 0;
+      }
     }
 
     & .address__info {
       font-size: 1.3rem;
       color: $dark-gray;
       margin: 0;
+
+      @include tablet {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

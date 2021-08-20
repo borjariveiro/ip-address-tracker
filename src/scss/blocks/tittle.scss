@@ -4,4 +4,9 @@
   font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  @include tablet {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
 }
