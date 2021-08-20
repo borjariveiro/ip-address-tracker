@@ -1,0 +1,18 @@
+// Style guide
+@import "config/colors";
+@import "config/fonts";
+
+//Mixins
+@import "mixins/breakpoints.scss";
+
+// Base styles
+@import "base/modern-normalize.scss";
+@import "base/base";
+
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/background-image.scss";
+@import "blocks/tittle.scss";
+@import "blocks/search__form.scss";
+@import "blocks/address.scss";
+@import "blocks/map.scss";
