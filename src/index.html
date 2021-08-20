@@ -40,39 +40,40 @@
       <form class="search__form" action="#">
         <input
           class="search__input"
+          id="searchInput"
           type="text"
           placeholder="Search for any IP address or domain"
         />
-        <button type="submit" class="search__button">
+        <button type="submit" class="search__button" id="searchButton">
           <img src="images/icon-arrow.svg" alt="Submit search ip or domain" />
         </button>
       </form>
       <section class="address">
         <div class="address__block">
           <h2 class="address__tittle">IP address</h2>
-          <p class="address__info">192.212.174.101</p>
+          <p class="address__info" id="addressIP">192.212.174.101</p>
         </div>
         <div class="address__block">
           <h2 class="address__tittle">Location</h2>
-          <p class="address__info">Brooklyn, NY 10001</p>
+          <p class="address__info" id="addressLocation">Brooklyn, NY 10001</p>
         </div>
         <div class="address__block">
           <h2 class="address__tittle">Timezone</h2>
-          <p class="address__info">UTC - 05:00</p>
+          <p class="address__info" id="addressTimezone">UTC - 05:00</p>
         </div>
         <div class="address__block">
           <h2 class="address__tittle">ISP</h2>
-          <p class="address__info">SpaceX Starlink</p>
+          <p class="address__info" id="addressISP">SpaceX Starlink</p>
         </div>
       </section>
     </header>
     <div class="map" id="mapid"></div>
     <!-- JS -->
+    <script src="js/scripts-min.js"></script>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
-    <script src="js/index.js"></script>
   </body>
 </html>
