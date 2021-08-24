@@ -17,7 +17,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/){:target="\_blank"}
+- Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/)
 
 ### The challenge
 
@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](public/images/desktop-screenshot.png){:target="\_blank"}
+![Desktop](public/images/desktop-screenshot.png)
 
-![Mobile](public/images/mobile-screenshot.png){:target="\_blank"}
+![Mobile](public/images/mobile-screenshot.png)
 
 ## My process
 
@@ -48,10 +48,10 @@ Users should be able to:
 
 ### Useful resources
 
-- [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="\_blank"}
-- [JavaScript](https://es.javascript.info/){:target="\_blank"}
+- [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [JavaScript](https://es.javascript.info/)
 
 ## Author
 
-- Linkedin - [@borjariveiro](linkedin.com/in/borjariveiro){:target="\_blank"}
-- GitHub - [@Borja-Riveiro](https://github.com/Borja-Riveiro){:target="\_blank"}
+- Linkedin - [@borjariveiro](linkedin.com/in/borjariveiro)
+- GitHub - [@Borja-Riveiro](https://github.com/Borja-Riveiro)
