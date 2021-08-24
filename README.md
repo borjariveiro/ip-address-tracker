@@ -45,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow'
 - Gulp workflow
 - Fetch and promises with async/await
+- Deploy with Netlify
 
 ### Useful resources
 
