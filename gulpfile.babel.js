@@ -23,9 +23,6 @@ import clean from "gulp-purgecss"
 //Caché bust
 import cacheBust from "gulp-cache-bust"
 
-//Optimización imágenes
-import imagemin from "gulp-imagemin"
-
 //Browser sync
 import { init as server, stream, reload } from "browser-sync"
 
@@ -52,16 +49,6 @@ gulp.task("html-min", () => {
     )
     .pipe(gulp.dest("./public"))
 })
-
-// gulp.task("styles", () => {
-//   return gulp
-//     .src("./src/css/*.css")
-//     .pipe(plumber())
-//     .pipe(concat("styles-min.css"))
-//     .pipe(postcss(cssPlugins))
-//     .pipe(gulp.dest("./public/css"))
-//     .pipe(stream())
-// })
 
 gulp.task("babel", () => {
   return gulp
@@ -103,13 +90,6 @@ gulp.task("imgmin", () => {
   return gulp
     .src("./src/images/*")
     .pipe(plumber())
-    .pipe(
-      imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.mozjpeg({ quality: 30, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 1 }),
-      ])
-    )
     .pipe(gulp.dest("./public/images"))
 })
 
