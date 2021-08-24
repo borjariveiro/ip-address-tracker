@@ -9,6 +9,8 @@
   margin-top: 1.5rem;
   font-weight: 500;
   background-color: white;
+  position: relative;
+  z-index: 10;
 
   @include tablet {
     height: 170px;

@@ -5,7 +5,12 @@ const ip = document.querySelector("#addressIP")
 const locationZP = document.querySelector("#addressLocation")
 const addressTimezone = document.querySelector("#addressTimezone")
 const isp = document.querySelector("#addressISP")
-const searchedIP = input
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+  const ipSearched = input.value
+  getIpData(ipSearched)
+})
 
 async function getIpData(ip) {
   const API = `https://geo.ipify.org/api/v1?apiKey=at_w4eNJTImofKjQATDpKSnhvV6wtYMG&ipAddress=${ip}`
@@ -19,10 +24,34 @@ async function getIpData(ip) {
 
     const ipData = await ipRequest.json()
 
-    console.log(ipData)
+    showIpData(ipData)
+
+    showMap(ipData.location.lat, ipData.location.lng)
   } catch (error) {
     console.log(error.message)
   }
 }
 
-// getIpData("192.212.174.101")
+function showIpData(ipData) {
+  ip.textContent = ipData.ip
+  locationZP.textContent = `${ipData.location.city}, ${ipData.location.country} ${ipData.location.postalCode}`
+  addressTimezone.textContent = ipData.location.timezone
+  isp.textContent = ipData.isp
+}
+
+function showMap(lat, lng) {
+  var mymap = L.map("mapid").setView([lat, lng], 13)
+
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYm9yamFyaXZlaXJvIiwiYSI6ImNrc2h2bzk0YzF5NnEzMm8zM203cTJyOTMifQ.5sXm4VzYvQKvEWFhv6fhBg",
+    {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: "your.mapbox.access.token",
+    }
+  ).addTo(mymap)
+}
