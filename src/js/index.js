@@ -5,6 +5,7 @@ const ip = document.querySelector("#addressIP")
 const locationZP = document.querySelector("#addressLocation")
 const addressTimezone = document.querySelector("#addressTimezone")
 const isp = document.querySelector("#addressISP")
+const error = document.querySelector("#error")
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
@@ -26,16 +27,23 @@ async function getIpData(ip) {
 
     showIpData(ipData)
 
+    error.innerHTML = ""
+
     showMap(ipData.location.lat, ipData.location.lng)
   } catch (error) {
+    showError()
     console.log(error.message)
   }
+}
+
+function showError() {
+  error.innerHTML = "Enter a valid public ip"
 }
 
 function showIpData(ipData) {
   ip.textContent = ipData.ip
   locationZP.textContent = `${ipData.location.city}, ${ipData.location.country} ${ipData.location.postalCode}`
-  addressTimezone.textContent = ipData.location.timezone
+  addressTimezone.textContent = `UTC ${ipData.location.timezone}`
   isp.textContent = ipData.isp
 }
 
@@ -54,4 +62,10 @@ function showMap(lat, lng) {
       accessToken: "your.mapbox.access.token",
     }
   ).addTo(mymap)
+
+  var myIcon = L.icon({
+    iconUrl: "images/icon-location.svg",
+  })
+
+  var marker = L.marker([lat, lng], { icon: myIcon }).addTo(mymap)
 }

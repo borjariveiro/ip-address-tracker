@@ -5,4 +5,11 @@
   z-index: 1;
   top: 35%;
   width: 100%;
+
+  & .map__icon {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    z-index: 100;
+  }
 }

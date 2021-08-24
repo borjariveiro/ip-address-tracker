@@ -3,16 +3,17 @@
 @import "config/fonts";
 
 //Mixins
-@import "mixins/breakpoints.scss";
+@import "mixins/breakpoints";
 
 // Base styles
-@import "base/modern-normalize.scss";
+@import "base/modern-normalize";
 @import "base/base";
 
 // Blocks
-@import "blocks/header.scss";
-@import "blocks/background-image.scss";
-@import "blocks/tittle.scss";
-@import "blocks/search__form.scss";
-@import "blocks/address.scss";
-@import "blocks/map.scss";
+@import "blocks/header";
+@import "blocks/background-image";
+@import "blocks/tittle";
+@import "blocks/search-form";
+@import "blocks/address";
+@import "blocks/map";
+@import "blocks/error";
