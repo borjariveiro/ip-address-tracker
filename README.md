@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Ip Address Tracker](https://ip-address-tracker.netlify.app/)
+- Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/)
 
 ## My process
 
