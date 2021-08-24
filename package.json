@@ -26,5 +26,8 @@
     "gulp-purgecss": "^2.2.0",
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^1.2.0"
-  }
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
