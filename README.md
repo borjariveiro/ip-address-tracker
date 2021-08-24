@@ -5,15 +5,19 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
+  - [Links](#links)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
+
+### Links
+
+- Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/){:target="\_blank"}
 
 ### The challenge
 
@@ -26,13 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](public/images/desktop-screenshot.png)
+![Desktop](public/images/desktop-screenshot.png){:target="\_blank"}
 
-![Mobile](public/images/mobile-screenshot.png)
-
-### Links
-
-- Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/)
+![Mobile](public/images/mobile-screenshot.png){:target="\_blank"}
 
 ## My process
 
@@ -48,10 +48,10 @@ Users should be able to:
 
 ### Useful resources
 
-- [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [JavaScript](https://es.javascript.info/)
+- [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="\_blank"}
+- [JavaScript](https://es.javascript.info/){:target="\_blank"}
 
 ## Author
 
-- Linkedin - [@borjariveiro](linkedin.com/in/borjariveiro)
-- GitHub - [@Borja-Riveiro](https://github.com/Borja-Riveiro)
+- Linkedin - [@borjariveiro](linkedin.com/in/borjariveiro){:target="\_blank"}
+- GitHub - [@Borja-Riveiro](https://github.com/Borja-Riveiro){:target="\_blank"}
