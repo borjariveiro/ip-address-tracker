@@ -6,18 +6,24 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [Links](#links)
+  - [Author](#author)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+
 
 ## Overview
 
 ### Links
 
 - Solution URL: [Ip Address Tracker](https://ip-address-tracker-borja.netlify.app/)
+
+### Author
+
+- Linkedin - [borjariveiro](https://www.linkedin.com/in/borjariveiro/)
+- GitHub - [borjariveiro](https://github.com/Borja-Riveiro)
 
 ### The challenge
 
@@ -51,8 +57,3 @@ Users should be able to:
 
 - [CSS-TRICKS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [JavaScript](https://es.javascript.info/)
-
-## Author
-
-- Linkedin - [@borjariveiro](linkedin.com/in/borjariveiro)
-- GitHub - [@Borja-Riveiro](https://github.com/Borja-Riveiro)
