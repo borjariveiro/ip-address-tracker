@@ -22,8 +22,8 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Author
 
-- Linkedin - [borjariveiro](https://www.linkedin.com/in/borjariveiro/)
-- GitHub - [borjariveiro](https://github.com/Borja-Riveiro)
+- [Linkedin](https://www.linkedin.com/in/borjariveiro/)
+- [GitHub](https://github.com/borjariveiro)
 
 ### The challenge
 
