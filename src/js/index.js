@@ -37,7 +37,7 @@ async function getIpData(ip) {
 }
 
 function showError() {
-  error.innerHTML = "Enter a valid public ip"
+  error.innerHTML = "Enter a valid public ip or disabled AdBlock"
 }
 
 function showIpData(ipData) {
